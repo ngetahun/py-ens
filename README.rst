@@ -33,9 +33,12 @@
 py-ens
 ======
 
+Python implementation of EIP-137 ethereum protocol.
 
     Add a short description here!
 
+Task:
+-
 
 A longer description of your project goes here...
 
