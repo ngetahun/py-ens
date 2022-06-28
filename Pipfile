@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+py-ens = {editable = true, path = "."}
+pytest = "*"
+pytest-cov = "*"
+tox = "*"
+eth-hash = {extras = ["pycryptodome"], version = "*"}
+eth-typing = "*"
+eth-utils = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
