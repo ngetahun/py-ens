@@ -11,6 +11,7 @@ tox = "*"
 eth-hash = {extras = ["pycryptodome"], version = "*"}
 eth-typing = "*"
 eth-utils = "*"
+idna = "*"
 
 [dev-packages]
 
