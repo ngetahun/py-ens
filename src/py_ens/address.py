@@ -1,14 +1,10 @@
-from typing import Optional
 import re
-import hashlib
-from eth_hash.auto import keccak as keccak_256
-from eth_utils import to_checksum_address, is_checksum_address
+from typing import Optional
 
-def calculate_keccak256(str_):
-    return keccak_256(str_.encode())
+from eth_utils import to_checksum_address
+
 
 class Address:
-
     def __init__(self, _hex: str):
         hexAddressMatcher = re.compile(r"^(0[xX])?([0-9a-fA-F]{40})$")
         matches = re.match(hexAddressMatcher, _hex)
