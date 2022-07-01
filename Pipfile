@@ -9,9 +9,11 @@ pytest = "*"
 pytest-cov = "*"
 tox = "*"
 eth-hash = {extras = ["pycryptodome"], version = "*"}
-eth-typing = "*"
+eth-typing = "==3.0.0"
 eth-utils = "*"
 idna = "*"
+requests = "*"
+pytest-vcr = "*"
 
 [dev-packages]
 
