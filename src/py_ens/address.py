@@ -28,3 +28,9 @@ class Address:
     def hexString(self, prefix: Optional[bool] = False) -> str:
         hex_prefix = "0x" if prefix else ""
         return hex_prefix + self._hex
+
+    def __eq__(self, another_address: "Address") -> bool:
+        if another_address is None or not isinstance(another_address, Address):
+            return False
+
+        return self.hexString() == another_address.hexString()

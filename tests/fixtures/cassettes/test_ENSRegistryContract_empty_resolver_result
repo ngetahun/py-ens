@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: '{"method": "eth_call", "params": [{"to": "0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e",
+      "data": "0x0178b8bfee6c4522aab0003e8d14cd40a6af439055fd2577951148c14b6cea9a53475835"},
+      "latest"], "jsonrpc": "2.0", "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '211'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://cloudflare-eth.com/
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAwAAAP//dMFbCoAgEAXQvdzviFHL126cSaGICi0Ior23gs55sLR9q4cgQveEDjW3
+        az0RQTf9GIKzhcmI0XlkLyVrtiJslFDg5HzmxGlQ6DBPiOr9AAAA//8DAHlWXPpmAAAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 723e3cb0d8346969-FRA
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 01 Jul 2022 09:50:23 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1
